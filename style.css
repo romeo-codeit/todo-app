@@ -1,0 +1,148 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #4A6EF5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.task-container {
+  background: white;
+  width: 40vw;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.task-container .div {
+  margin: auto 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.greeting {
+  font-size: 38px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.clock {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4A6EF5;
+}
+
+.header h2 {
+  font-size: 30px;
+}
+
+.task-count {
+  color: #4A6EF5;
+  font-size: 16px;
+  margin-left: -148px;
+}
+
+/* Task Input Section */
+.task-input {
+  display: flex;
+  margin: 15px 0;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-input input:focus {
+  border-color: #4A6EF5;
+  box-shadow: 0 0 5px rgba(74, 110, 245, 0.5);
+  outline: none;
+}
+
+.add-task {
+  background: #4A6EF5;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.add-task:hover {
+  background: #3a5cd8;
+}
+
+/* Empty state message */
+#taskMessage {
+  color: #777;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+/* Hide default radio */
+.task-list input[type="radio"] {
+  display: none;
+}
+
+/* Custom radio button styling */
+.task-list input[type="radio"] + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Circle border */
+.task-list input[type="radio"] + label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4A6EF5;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+  background-color: white;
+}
+
+/* Fill when checked */
+.task-list input[type="radio"]:checked + label::before {
+  background: radial-gradient(circle, #4A6EF5 40%, transparent 41%);
+}
+
+/* Task timestamp */
+.time {
+  color: gray;
+  font-size: 15px;
+}
