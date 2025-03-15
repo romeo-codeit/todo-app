@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="task-container">
+    <div>
+      <h1 class="greeting" id="greetingText"></h1>
+    </div>
+    <div class="header">
+      <div>
+        <h2 id="currentDate"></h2>
+        <p class="task-count"><span id="taskCount">0</span> tasks</p>
+      </div>
+
+      <div class="clock" id="digitalClock"></div>
+
+    </div>
+
+    <ul class="task-list"></ul>
+
+    <p id="taskMessage">Task wont complete themselves, or will they?</p>
+
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a new task...">
+      <button class="add-task">+</button>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
