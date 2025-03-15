@@ -146,3 +146,52 @@ body {
   color: gray;
   font-size: 15px;
 }
+
+
+
+
+
+@media screen and (max-width: 900px ){
+  .greeting {
+    font-size: 30px;
+  }
+
+  .task-container {
+    width: 65vw;
+  }
+
+  .header h2, .clock {
+    font-size: 23px;
+  }
+
+  #taskMessage {
+    font-size: 17px;
+  }
+
+  .task-count {
+    margin-left: -128px;
+  }
+}
+
+
+@media screen and (max-width: 600px ){
+  .task-container {
+    width: 80vw;
+  }
+
+  .greeting {
+    font-size: 25px;
+  }
+
+  .header h2, .clock {
+    font-size: 20px;
+  }
+
+  #taskMessage {
+    font-size: 16px;
+  }
+
+  .task-count {
+    margin-left: -108px;
+  }
+}
