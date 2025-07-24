@@ -34,6 +34,12 @@ function updateCount() {
     const tasks = taskList.children.length;
     taskCount.textContent = tasks;
     taskMessage.style.display = tasks === 0 ? "block" : "none"; // Show message if empty
+
+    // Show/hide the Clear All button
+    const clearTasksBtn = document.getElementById("clearTasks");
+    if (clearTasksBtn) {
+        clearTasksBtn.style.display = tasks === 0 ? "none" : "inline-block";
+    }
 }
 
 // Function to add a new task
@@ -61,8 +67,9 @@ function addTask() {
 
     // Remove task when checked
     radio.addEventListener("change", () => {
-        li.remove();
-        updateCount();
+        // li.remove();
+        // updateCount();
+        li.classList.toggle("completed", radio.checked);
     });
 
     // Append elements
@@ -82,6 +89,15 @@ addTaskBtn.addEventListener("click", addTask);
 taskInput.addEventListener("keypress", (event) => {
     if (event.key === "Enter") addTask();
 });
+
+// Clear all tasks button logic
+const clearTasksBtn = document.getElementById("clearTasks");
+if (clearTasksBtn) {
+    clearTasksBtn.addEventListener("click", () => {
+        taskList.innerHTML = "";
+        updateCount();
+    });
+}
 
 // Initialize
 updateDate();
