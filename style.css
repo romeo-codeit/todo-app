@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Nunito', sans-serif;
   background: #4A6EF5;
   display: flex;
   justify-content: center;
@@ -17,6 +17,9 @@ body {
   text-align: center;
 }
 
+.divv{
+  background-color: black;
+}
 .task-container .div {
   margin: auto 30px;
 }
@@ -29,19 +32,20 @@ body {
 }
 
 .greeting {
-  font-size: 38px;
+  font-size: 35px;
   color: #333;
   margin-bottom: 20px;
 }
 
 .clock {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
   color: #4A6EF5;
 }
 
 .header h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .task-count {
@@ -147,9 +151,39 @@ body {
   font-size: 15px;
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+button .i {
+  color: white;
+  font-size: 22px;
+  margin: 3px 3px 0 0;
+}
+
+.clear-tasks {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-tasks:hover {
+  background: #c0392b;
+}
+
+.task-list li.completed label {
+  color: #888;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+>>>>>>> 6792f93 (Update section layout and fixed font and task input)
 
 @media screen and (max-width: 900px ){
   .greeting {
@@ -194,4 +228,8 @@ body {
   .task-count {
     margin-left: -108px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6792f93 (Update section layout and fixed font and task input)
